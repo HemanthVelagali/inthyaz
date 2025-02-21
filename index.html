@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city name">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="weather-info">
+            <div class="city-info">
+                <h2 id="city-name"></h2>
+                <button id="favorite-btn" class="favorite-btn">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+            <div class="weather-details">
+                <h1 id="temperature"></h1>
+                <p id="description"></p>
+                <div class="additional-info">
+                    <p>Feels like: <span id="feels-like"></span></p>
+                    <p>Min: <span id="temp-min"></span></p>
+                    <p>Max: <span id="temp-max"></span></p>
+                    <p>UV Index: <span id="uv-index"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="favorites-section">
+            <h3>Favorite Cities</h3>
+            <div id="favorites-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+#search-btn {
+    width: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #5b548a;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-btn:hover {
+    background: #4a4372;
+}
+
+.weather-info {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.city-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.favorite-btn.active i {
+    color: #ff4757;
+}
+
+#temperature {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.additional-info p {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+.favorites-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+#favorites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.favorite-item {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.favorite-item:hover {
+    background: #e0e0e0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #temperature {
+        font-size: 36px;
+    }
+
+    .additional-info {
+        gap: 10px;
+    }
+
+    .additional-info p {
+        min-width: calc(50% - 5px);
+    }
+} 
